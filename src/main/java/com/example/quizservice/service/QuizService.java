@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -36,38 +37,12 @@ public class QuizService {
     }
 
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(Integer id) {
-        /*
-        Optional<Quiz> quiz = quizDao.findById(id);
-        List<Question> questionsFromDB = quiz.get().getQuestions();
-        List<QuestionWrapper> questionsForUser = new ArrayList<>();
-        for(Question question : questionsFromDB){
-            QuestionWrapper questionWrapper = new QuestionWrapper(question.getId(),
-                    question.getQuestionTitle(),
-                    question.getOption1(),
-                    question.getOption2(),
-                    question.getOption3());
-            questionsForUser.add(questionWrapper);
-        }
-        return new ResponseEntity<>(questionsForUser, HttpStatus.OK);
-
-         */
-        return null;
+        Quiz quiz = quizDao.findById(id).get();
+        List<Integer> questionIds = quiz.getQuestionIds();
+        return quizInterface.getQuestionsFromIds(questionIds);
     }
 
     public ResponseEntity<Integer> calculateResult(Integer id, List<Response> responses) {
-        int right = 0;
-        /*
-        int i = 0;
-        List<Question> questions = quizDao.findById(id).get().getQuestions();
-        for (Response response : responses) {
-            if(response.getResponse().equals(questions.get(i).getRightAnswer())){
-                right++;
-            }
-            i++;
-        }
-        return new ResponseEntity<>(right, HttpStatus.OK);
-
-         */
-        return null;
+        return quizInterface.getScore(responses);
     }
 }

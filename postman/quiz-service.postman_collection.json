@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "15c8232c-d3b8-46fa-b061-788bcf6ee592",
+		"name": "quiz-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28422949"
+	},
+	"item": [
+		{
+			"name": "localhost:8090/quiz/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"categoryName\": \"Java\",\n    \"title\": \"Maximun value for byte in JAVA\",\n    \"numQuestions\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/quiz/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"quiz",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8090/quiz/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\": \"JAVA\",\n    \"numQuestions\": 5,\n    \"title\": \"test quiz 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/quiz/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"quiz",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "localhost:8090/quiz/create (1)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\": \"JAVA\",\n    \"title\": \"Maximun value for byte in JAVA\",\n    \"numQuestions\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/quiz/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"quiz",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8090/quiz/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/quiz/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"quiz",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8090/quiz/get/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/quiz/get/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"quiz",
+								"get",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8090/quiz/submit/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"response\": \"extends\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/quiz/submit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"quiz",
+						"submit",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8090/quiz/submit/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"response\": \"extends\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/quiz/submit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"quiz",
+								"submit",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8090/quiz/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"categoryName\": \"JAVA\",\n    \"title\": \"Maximun value for byte in JAVA\",\n    \"numQuestions\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/quiz/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"quiz",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/quiz/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"categoryName\": \"JAVA\",\n    \"numQuestions\": 1,\n    \"title\": \"test quiz 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/quiz/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"quiz",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
